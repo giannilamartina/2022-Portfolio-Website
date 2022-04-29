@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
-<nav class="navbar navbar-center navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Gianni LaMartina</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul> 
       </div>
@@ -32,15 +36,69 @@
 <body>
     <div id="main">
         <div class="container" id="about">
-            <h1>Hi, my name is Gianni LaMartina.</h1>
+            <h1>Hi, my name is Gianni <span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='[ "LaMartina." ]'></span></h1>
             <h2>I am a fullstack software developer based in Kansas City.</h2>        
             <p>I discovered web design in high school and immediately fell in love.<br>
             As my skills have grown, so has my appreciation for backend technologies.<br>
             Combining creativity through design and logic through programming is truly the best of both worlds.<br>
             My studies in Computer Science and Information Technology at the University of Kansas have allowed me to grow as a developer and beyond.</p>
+            <h3>Technologies I Work With</h3>
+            <i id="technology" class="fab fa-html5 fa-5x" style="color: blue"></i>
+            <i id="technology" class="fab fa-css3-alt fa-5x" style="color: red"></i>
+            <i id="technology" class="fab fa-js fa-5x" style="color:orange"></i>
+            <i id="technology" class="fab fa-react fa-5x" style="color:lightblue"></i>
+            <i id="technology" class="fab fa-java fa-5x" style="color: brown"></i>
+            <i id="technology" class="fab fa-python fa-5x" style="color: yellowgreen"></i>
+            <i id="technology" class="fab fa-bootstrap fa-5x" style="color: purple"></i>
+            <h3>Hobbies</h3>
+            <p>Pushing away from my desk, I'm passionate about health & fitness, playing piano, and cooking.</p>
+        </div>
+        <div class="container" id="portfolio">
+            <h1>Portfolio</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Restaurant Website</h5>
+                      <p class="card-text">HTML, CSS, & JavaScript</p>
+                      <a href="#" class="btn btn-primary">View Live</a> <a href="#" class="btn btn-primary">Source Code</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="container" id="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/lamartinagianni" target="_blank" class="btn contact-details"><i id="connect" class="fab fa-5x fa-linkedin"></i></a>
+                <a href="mailto:lamartinagianni@gmail.com" target="_blank" class="btn contact-details"><i id="connect" class="far fa-5x fa-envelope"></i></a>
+                <a href="https://twitter.com/giannilamartina/" target="_blank" class="btn contact-details"><i id="connect" class="fab fa-5x fa-twitter"></i></a>
+                <a href="https://github.com/giannilamartina" target="_blank" class="btn contact-details"><i id="connect" class="fab fa-5x fa-github"></i></a>
+            </div>
+        </div>
         </div>
     </div>
     <script src="/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
 </body>
 </html>
