@@ -58,19 +58,14 @@ body {
   padding-bottom: 5em;
 }
 
+.headshot {
+  padding-top: 8em;
+  padding-bottom: 5em;
+}
 #headshot {
   border-radius: 50%;
   height: 20em;
-  margin-top: 5em;
-  margin-bottom: 5em;
 }
 
-@media (max-width: 700px) {
-  #headshot {
-    margin-bottom: 2em;
-  }
-
-  #about {
-    padding-top: 1em;
-  }
+#technology {
 }
