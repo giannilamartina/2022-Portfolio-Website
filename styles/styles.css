@@ -23,6 +23,8 @@ body {
 .navbar-nav > li {
   display: inline-block;
   float: none;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .main {
@@ -41,14 +43,19 @@ body {
 
 #about {
   height: 100%;
+  padding-bottom: 5em;
 }
 
 #portfolio {
   height: 100%;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 #contact {
   height: 100%;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 #headshot {
@@ -66,7 +73,4 @@ body {
   #about {
     padding-top: 1em;
   }
-}
-
-p {
 }
