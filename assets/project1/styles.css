@@ -10,7 +10,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #1d061a;
+  background: #42133c;
+}
+
+h1 {
+  clear: left;
 }
 
 .card-container {
@@ -29,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 40px 30px;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .card-container .box::before {
@@ -43,7 +47,7 @@ body {
   background: #fff;
   border-radius: 8px;
   transform: skewX(15deg);
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .card-container .box::after {
@@ -56,7 +60,7 @@ body {
   background: #fff;
   border-radius: 8px;
   transform: skewX(15deg);
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   filter: blur(30px);
 }
 
@@ -104,7 +108,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   opacity: 0;
-  transition: 0.1s;
+  transition: 0.1s ease-in-out;
   animation: animate 2s ease-in-out infinite;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
@@ -128,7 +132,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   animation: animate 2s ease-in-out infinite;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   animation-delay: -1s;
@@ -162,12 +166,15 @@ body {
   border-radius: 8px;
   z-index: 1;
   transform: 0.5s;
+  transition: 0.5s ease-in-out;
+
   color: #fff;
 }
 
 .card-container .box:hover .content {
   left: -25px;
   padding: 60px 40px;
+  transition: 0.5s ease-in-out;
 }
 
 .card-container .box .content h2 {
